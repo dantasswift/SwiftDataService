@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D0A7D8AF2ED8A54900FE2148 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7D8AC2ED8A54900FE2148 /* ContentView.swift */; };
+		D0A7D8B02ED8A54900FE2148 /* SwiftDataServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7D8AD2ED8A54900FE2148 /* SwiftDataServiceApp.swift */; };
+		D0A7D8B12ED8A54900FE2148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A7D8AB2ED8A54900FE2148 /* Assets.xcassets */; };
+		D0A7D8B42ED8A56400FE2148 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7D8B32ED8A56400FE2148 /* DatabaseService.swift */; };
+		D0A7D8B72ED8A59300FE2148 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7D8B62ED8A59300FE2148 /* User.swift */; };
+		D0A7D8BC2ED8A79D00FE2148 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7D8BB2ED8A79D00FE2148 /* UserViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D0A7D88F2ED8A53E00FE2148 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +36,15 @@
 		D0A7D8812ED8A53B00FE2148 /* SwiftDataService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A7D88E2ED8A53E00FE2148 /* SwiftDataServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDataServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A7D8982ED8A53E00FE2148 /* SwiftDataServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDataServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A7D8AB2ED8A54900FE2148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0A7D8AC2ED8A54900FE2148 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D0A7D8AD2ED8A54900FE2148 /* SwiftDataServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataServiceApp.swift; sourceTree = "<group>"; };
+		D0A7D8B32ED8A56400FE2148 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		D0A7D8B62ED8A59300FE2148 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D0A7D8BB2ED8A79D00FE2148 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D0A7D8832ED8A53B00FE2148 /* SwiftDataService */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftDataService;
-			sourceTree = "<group>";
-		};
 		D0A7D8912ED8A53E00FE2148 /* SwiftDataServiceTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SwiftDataServiceTests;
@@ -75,7 +85,7 @@
 		D0A7D8782ED8A53B00FE2148 = {
 			isa = PBXGroup;
 			children = (
-				D0A7D8832ED8A53B00FE2148 /* SwiftDataService */,
+				D0A7D8AE2ED8A54900FE2148 /* SwiftDataService */,
 				D0A7D8912ED8A53E00FE2148 /* SwiftDataServiceTests */,
 				D0A7D89B2ED8A53E00FE2148 /* SwiftDataServiceUITests */,
 				D0A7D8822ED8A53B00FE2148 /* Products */,
@@ -92,6 +102,59 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D0A7D8AE2ED8A54900FE2148 /* SwiftDataService */ = {
+			isa = PBXGroup;
+			children = (
+				D0A7D8B82ED8A64B00FE2148 /* App */,
+				D0A7D8BA2ED8A78F00FE2148 /* ViewModels */,
+				D0A7D8B92ED8A72900FE2148 /* Views */,
+				D0A7D8B52ED8A58200FE2148 /* Models */,
+				D0A7D8B22ED8A54F00FE2148 /* Services */,
+				D0A7D8AB2ED8A54900FE2148 /* Assets.xcassets */,
+			);
+			path = SwiftDataService;
+			sourceTree = "<group>";
+		};
+		D0A7D8B22ED8A54F00FE2148 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D0A7D8B32ED8A56400FE2148 /* DatabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D0A7D8B52ED8A58200FE2148 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0A7D8B62ED8A59300FE2148 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0A7D8B82ED8A64B00FE2148 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D0A7D8AD2ED8A54900FE2148 /* SwiftDataServiceApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D0A7D8B92ED8A72900FE2148 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0A7D8AC2ED8A54900FE2148 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0A7D8BA2ED8A78F00FE2148 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D0A7D8BB2ED8A79D00FE2148 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +169,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D0A7D8832ED8A53B00FE2148 /* SwiftDataService */,
 			);
 			name = SwiftDataService;
 			packageProductDependencies = (
@@ -212,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A7D8B12ED8A54900FE2148 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A7D8B72ED8A59300FE2148 /* User.swift in Sources */,
+				D0A7D8B42ED8A56400FE2148 /* DatabaseService.swift in Sources */,
+				D0A7D8AF2ED8A54900FE2148 /* ContentView.swift in Sources */,
+				D0A7D8BC2ED8A79D00FE2148 /* UserViewModel.swift in Sources */,
+				D0A7D8B02ED8A54900FE2148 /* SwiftDataServiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
